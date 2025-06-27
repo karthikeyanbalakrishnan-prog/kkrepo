@@ -3,5 +3,5 @@ LABEL MAINTAINER="karthikeyanBalakrishnan<karthi30384@gmail.com>"
 Run apt updat && apt install -y nginx
 COPY src/index.html  /usr/share/nginx/html
 COPY src/index.html  /var/www/html
-EXPOSE 8080
+EXPOSE 80
 CMD [ "nginx" , "-g", "daemon off;" ]
